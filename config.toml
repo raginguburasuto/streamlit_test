@@ -1,5 +1,4 @@
 [server]
-port = 8501                  # Streamlit usa 8501 por defecto (Render lo sobreescribirá con $PORT)
-headless = true              # Necesario para entornos sin interfaz gráfica (servidores)
-enableCORS = false           # Desactiva CORS si no lo necesitas
-browser.gatherUsageStats = false  # Opcional: desactiva estadísticas de uso
+port = 8501  # Will be overridden by Render's $PORT
+headless = true
+enableXsrfProtection = true  # Recommended for security
