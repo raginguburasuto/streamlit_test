@@ -1,2 +1,3 @@
-headless = true
-enableXsrfProtection = true  # Mantén esto por seguridad
+[server]
+headless = true  # Necesario para entornos sin interfaz gráfica
+enableStaticServing = true  # Para servir archivos estáticos
